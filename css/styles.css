@@ -15,6 +15,88 @@ li{
     padding: 0;
     
 }
+html{
+    background-color: #000;
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    top: calc(4em + 50px);
+}
+
+
+nav{
+    width: 100%;
+    height: 4em;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 80%;
+    z-index: 99;
+}
+.nav-item{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    width: 35%;
+    padding-left: 2em;
+}
+.nav-right{
+    gap: 1em;
+    justify-content: flex-end;
+    padding-right: 2em;
+    padding-left: 0;
+}
+.nav-right a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-item .search{
+    display: flex;
+}
+nav img{
+    float: left;
+    height: 3em;
+}
+input {
+    height: 30px;
+    font-size: 16px;
+    padding: 0 0 0 5px;
+    width: 20em;
+    border-width: 1px;
+    border-color: #9615DB;
+    border-style: solid none solid solid;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    background-color: #d2d3d3;
+}
+.button-search {
+    color: white;
+    background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
+    cursor: pointer;
+    height: 32px;
+    width: 50px;
+    outline: none;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    border-width: 1px;
+    border-color: #9615DB;
+    border-style: solid solid solid none;
+}
+
+.button-search:hover {
+    opacity: 0.9;
+}
+
+menu{
+    position: fixed;
+    width: 80%;
+    z-index: 9999;
+    top: 4em;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -52,8 +134,43 @@ li{
     color: white;
 }
 
+.sticky-buttons{
+    z-index: 99999;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 10%;
+    bottom: 10em;
+}
+.sticky-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F49136;
+    color: #000;
+    border-radius: 20px 0 0 20px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+.sticky-button:hover{
+    background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
+}
+.sticky-button icon{
+   font-size: 3em;
+   font-weight: 700;
+}
+.sticky-button p{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+
 
 .section-wrapper{
+    background-color: white;
     padding: 2em 10em 4em 10em;
 }
 
@@ -148,6 +265,9 @@ li{
     background-color: #E3E3E3;
     overflow: hidden;
     display: grid;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 75%);
 }
 .service-card:hover > .service-card-body {
     opacity: .8;
@@ -188,6 +308,9 @@ li{
 #about-us, #our-values {
     background-color: #F5F7FA;
 }
+#subscription {
+    background: linear-gradient(145deg, rgba(181, 127, 249, 0.5) 0%, rgba(255, 194, 137, 0.5) 100%);
+}
 .section-content{
     display: flex;
 }
@@ -203,7 +326,7 @@ li{
     text-align: justify;
 }
 
-.section-content .section-info button{
+.section-content .section-info button, .subscription-info button{
     width: 100%;
     height: 60px;
     font-size: 20px;
@@ -214,6 +337,7 @@ li{
     margin-top: 3em;
     box-shadow: 0 4px 4px rgba(0,0,0,.25);
     background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
+    cursor: pointer;
 }
 
 .values-wrapper{
@@ -270,4 +394,44 @@ a:hover .frag{
 text {
     font-size: 10px;
     fill: #FFFFFF;
+}
+
+
+#subscription h3{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 28px;
+}
+.subscription-info{
+    display: flex;
+}
+.subscription-info ul{
+    width: 70%;
+    list-style: none;
+}
+.subscription-info li{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.subscription-info button{
+    width: 30%;
+}
+
+
+footer .footer-info{
+    display: flex;
+    background: linear-gradient(90deg, rgba(229, 68, 58, 0.9) 0%, rgba(110, 45, 191, 0.9) 100%);
+    text-align: center;
+    padding: 3em 0;
+}
+footer .footer-info div{
+    flex: 1 1 0;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 1px 0;
 }

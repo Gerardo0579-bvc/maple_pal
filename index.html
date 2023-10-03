@@ -8,8 +8,30 @@
     </head>
     <body>
         <nav>
-
+            <div class="nav-item">
+                <img src="images/logo.png">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button class="button-search" title="search">🔎︎</button>
+                </div>
+            </div>
+            <div class="nav-item nav-right">
+                <a href="#" >Sign up</a>
+                <a href="#" >Log in</a>
+                <icon>👤</icon>
+                <icon>🖃</icon>
+            </div>
         </nav>
+        <div class="sticky-buttons">
+            <div class="sticky-button">
+                <icon>🖃</icon>
+                <p>Contact us</p>
+            </div>
+            <div class="sticky-button">
+                <icon>⌂</icon>
+                <p>Home</p>
+            </div>
+        </div>
         <menu>
             <ul class="navbar">
                 <li><a  href="#our-services">Our services</a></li>
@@ -143,35 +165,55 @@
                 </div>
                 <svg class="values-menu" width="50%"  viewBox="-2 -2 202 203" shape-rendering="geometricPrecision">
                     <a onmouseover="onMouseOverValue('Collaboration')" onmouseleave="onMouseLeavingValue('Collaboration')"  xlink:href="#">
-                        <clipPath id="theClippingPath">
+                        <clipPath id="theClippingPath1">
                             <path class="frag" d="M100,100 v-100 a100,100 1 0,1 86.6025,50"" />
                         </clipPath>
-                        <text x="135" y="42.5" text-anchor="middle">Collaboration</text>
                         <image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/beagle400.jpg" height="485" width="485"
-                            clip-path="url(#theClippingPath)"></image>
+                            clip-path="url(#theClippingPath1)"></image>
+                        <text x="135" y="42.5" text-anchor="middle">Collaboration</text>
                     </a>
                     <a onmouseover="onMouseOverValue('Accesibility')" onmouseleave="onMouseLeavingValue('Accesibility')"  xlink:href="#">
-                        <path class="frag" d="M100,100 l86.6025,-50 a100,100 1 0,1 0,100" />
+                        <clipPath id="theClippingPath2">
+                            <path class="frag" d="M100,100 l86.6025,-50 a100,100 1 0,1 0,100" />
+                        </clipPath>
+                        <image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/beagle400.jpg" height="485" width="485"
+                            clip-path="url(#theClippingPath2)"></image>
                         <text x="170" y="105" text-anchor="middle">Accesibility</text>
                     </a>
                     <a onmouseover="onMouseOverValue('Empowerment')" onmouseleave="onMouseLeavingValue('Empowerment')"  xlink:href="#">
-                        <path class="frag" d="M100,100 l86.6025,50 a100,100 1 0,1 -86.6025,50" />
+                        <clipPath id="theClippingPath3">
+                            <path class="frag" d="M100,100 l86.6025,50 a100,100 1 0,1 -86.6025,50" />
+                        </clipPath>
+                        <image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/beagle400.jpg" height="485" width="485"
+                            clip-path="url(#theClippingPath3)"></image>
                         <text x="140" y="160" text-anchor="middle">Empowerment</text>
                     </a>
                     <a onmouseover="onMouseOverValue('Privacy')" onmouseleave="onMouseLeavingValue('Privacy')"  xlink:href="#">
-                        <path class="frag" d="M100,100 v100 a100,100 1 0,1 -86.6025,-50" />
+                        <clipPath id="theClippingPath4">
+                            <path class="frag" d="M100,100 v100 a100,100 1 0,1 -86.6025,-50" />
+                        </clipPath>
+                        <image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/beagle400.jpg" height="485" width="485"
+                            clip-path="url(#theClippingPath4)"></image>
                         <text x="65" y="170" text-anchor="middle">
                             <tspan x="65" y="155">Privacy and</tspan>
                             <tspan x="65" y="170">Security</tspan>
                         </text>
                     </a>
                     <a onmouseover="onMouseOverValue('Inclusivity')" onmouseleave="onMouseLeavingValue('Inclusivity')"  xlink:href="#">
-                        <path class="frag" d="M100,100 l-86.6025,50 a100,100 1 0,1 0,-100" />
+                        <clipPath id="theClippingPath5">
+                            <path class="frag" d="M100,100 l-86.6025,50 a100,100 1 0,1 0,-100" />
+                        </clipPath>
+                        <image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/beagle400.jpg" height="485" width="485"
+                            clip-path="url(#theClippingPath5)"></image>
                         <text x="27.5" y="105" text-anchor="middle">Inclusivity</text>
                         
                     </a>
                     <a onmouseover="onMouseOverValue('Improvement')" onmouseleave="onMouseLeavingValue('Improvement')"  xlink:href="#">
-                        <path class="frag" d="M100,100 l-86.6025,-50 a100,100 1 0,1 86.0025,-50" />
+                        <clipPath id="theClippingPath6">
+                            <path class="frag" d="M100,100 l-86.6025,-50 a100,100 1 0,1 86.0025,-50" />
+                        </clipPath>
+                        <image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/beagle400.jpg" height="485" width="485"
+                            clip-path="url(#theClippingPath6)"></image>
                         <text x="27.5" y="105" text-anchor="middle">
                             <tspan x="65" y="35">Continuos</tspan>
                             <tspan x="65" y="50">Improvement</tspan>
@@ -200,13 +242,60 @@
                 </div>
             </div>
         </section>
-        <section id="vision">
-
+        <section class="section-wrapper" id="vision"><div>
+            <h2>Our vision</h2>
+            <div class="section-content">
+                <img class="img-right" src="images/logo.png" alt="about us image">
+                <div class="section-info">
+                    <p>To serve as a one Stop Hub, helping newcomers in Canada navigate the challenges of settling.</p>
+                    <p>Through Maple, we envision a Canada where all newcomers have the knowledge, resources, and support they need to thrive.
+                    By providing a unified and inclusive digital platform, we aspire to foster a strong sense of community and belonging
+                    among immigrants, enriching the cultural fabric of our nation.
+                    With our mission and values guiding every aspect of our development, we are determined to be the go-to resource hub for
+                    new immigrants, helping them lay the foundation for a successful and fulfilling life in Canada. Together, let's build a
+                    brighter future and embrace the endless possibilities that come with cultural diversity and integration./button>
+                </div>
+            </div>
+        </div>
         </section>
-        <section id="subscription">
-
+        <section class="section-wrapper" id="subscription">
+            <h3>Sign up to get exclusive information for your new journey in Canada!</h3>
+            <div class="subscription-info">
+                <ul>
+                    <li>Benefit 1 - One stop hub for  all things landing and settlementin Canada</li>
+                    <li>Benefit 2 - Remove landing and settlement barriers</li>
+                    <li>Benefit 3 - Provision of usefulinformation and resources</li>
+                    <li>Benefit 4 - Access to comuninity support</li>
+                    <li>Benefit 5 - Access to lot of jobs opportunities</li>
+                </ul>
+                <button>Go sign up >>> </button>
+            </div>
         </section>
-        <footer></footer>
+        <footer>
+            <div class="footer-info">
+                <div class="footer-brand">
+                    <img src="images/logo.png"/>
+                    <p>We provide a one-stop platform for newcomers in Canada to access to essential resources, information, and the support
+                    they need.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us:</h4>
+                    <ul>
+                        <li>vesoftt@gmail.com</li>
+                        <li>Send us a message</li>
+                        <li>Become our partnet</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow us on</h4>
+                    <div>Social brands</div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 MaplePal. All Rights Reserved.</p>
+            </div>
+        </footer>
 
         <script src="js/slider.js"></script>
         <script>
