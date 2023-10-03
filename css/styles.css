@@ -1,0 +1,273 @@
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+menu,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(245, 247, 250, 1) 80%, rgba(206, 209, 215, 1) 100%);
+    height: 50px;
+}
+
+.navbar li{
+    display: flex;
+    width: 100%;
+}
+
+.navbar li a {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: grid;
+    align-items: center;
+}
+
+
+.navbar li :hover {
+    color: white;
+    background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+}
+
+.navbar li :hover > a {
+    color: white;
+}
+
+
+.section-wrapper{
+    padding: 2em 10em 4em 10em;
+}
+
+.section-wrapper h2{
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+#our-services{
+    display: flex;
+    flex-direction: column;
+}
+#new-service{
+    align-self: center;
+    display: inline-block;
+    border-radius: 40px;
+    background: transparent;
+    display: flex;
+    transition: background-color 0.2s linear;
+}
+#new-service:hover{
+    background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
+}
+#new-service .new-service-body{
+    width: 460px;
+    height: 130px;
+    margin: 0.5em;
+    background-color: aliceblue;
+    overflow: hidden;
+    display: Flex;
+    border-radius: 35px;
+}
+#new-service .new-service-text{
+    width: 25%;
+    line-height: 1em;
+    text-align: left;
+    padding-left: 0.6em;
+    color: #303030;
+    display: inline-flex;
+    align-items: center;
+    font-size: 38px;
+    text-shadow: -2px 2px white, 2px 2px white, 2px -2px white, -2px -2px white;
+    font-weight: 800;
+    background: linear-gradient(145deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
+    transition: background 0.3s linear;
+}
+#new-service:hover .new-service-text{
+    background: #303030;
+}
+#new-service .new-service-img{
+    width: 75%;
+    height: auto;
+    display: inline-flex;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+}
+#new-service:hover .new-service-img{
+    color: #303030;
+}
+#new-service .service-arrow{
+    height: 50%;
+    font-size: 5em;
+    rotate: 90deg;
+    color: black;
+}
+
+
+#services-wrapper {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.service-card{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left:2.5%;
+    margin-right:2.5%;
+    border-radius: 40px;
+    width: 95%;
+    background-color: transparent;
+}
+.service-card:hover{
+    background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
+}
+
+.service-card-body{
+    margin: 0.5em;
+    border-radius: 35px;
+    height: 25em;
+    background-color: #E3E3E3;
+    overflow: hidden;
+    display: grid;
+}
+.service-card:hover > .service-card-body {
+    opacity: .8;
+}
+.service-card-content{
+    align-self: center;
+    background-color: transparent;
+    transition: background-color 0.5s linear;
+}
+.service-card:hover .service-card-content{
+    background-color: #F2F2F2;
+}
+.service-card-content h3 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: -2px 2px white, 2px 2px white, 2px -2px white, -2px -2px white;
+    margin: 0.5em 0;
+}
+.service-card:hover .service-card-content h3 {
+    text-shadow: none;
+}
+
+.service-card-content ul{
+    color: black;
+    font-size: 20px;
+    margin: 0 4em 2em 4em;
+    display: none;
+}
+.service-card:hover ul {
+    display: block;
+}
+.service-card-content ul li{
+    margin: 8px 0 8px 0 ;
+}
+
+
+#about-us, #our-values {
+    background-color: #F5F7FA;
+}
+.section-content{
+    display: flex;
+}
+.section-content img{
+    min-width: 48%;
+}
+.section-content .img-right{margin-right: 2em;}
+.section-content .img-left{margin-left: 2em;}
+.section-content .section-info{
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.section-content .section-info button{
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    margin-top: 3em;
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
+}
+
+.values-wrapper{
+    display: flex;
+    text-align: center;
+}
+
+.values-description{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.values-right{ text-align: right; margin-left: 2em;}
+.values-left{ text-align: left; margin-right: 2em;}
+.values-description .value-item{
+    color: black;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.values-menu{
+    margin-top: 1em;
+}
+.values-description div {
+    background-color: aliceblue;
+    display: block;
+}
+
+
+.value-item-visible {
+    visibility: visible;
+}
+
+.value-item-collapsed {
+    visibility: collapse;
+}
+
+.frag {
+    fill: rgb(0, 0, 0, 50%);
+    stroke: #FFFFFF;
+    transition: fill 0.3s;
+}
+
+.center {
+    fill: white;
+}
+    
+a:hover .frag{
+    fill: rgb(0, 0, 0, 25%);
+}
+text {
+    font-size: 10px;
+    fill: #FFFFFF;
+}
