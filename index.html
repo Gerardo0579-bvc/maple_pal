@@ -9,17 +9,22 @@
     <body>
         <nav>
             <div class="nav-item">
-                <img src="images/logo.png">
-                <div class="search">
+                <a href="index.html">
+                    <img src="images/logo.png">
+                </a>
+                <a href="jobs.html">
+                    <button class="button-nav" title="search">Jobs</button>
+                </a>
+                <!-- <div class="search">
                     <input type="text" placeholder="Search...">
                     <button class="button-search" title="search">🔎︎</button>
-                </div>
+                </div> -->
             </div>
             <div class="nav-item nav-right">
-                <a href="#" >Sign up</a>
+                <!-- <a href="#" >Sign up</a>
                 <a href="#" >Log in</a>
                 <icon>👤</icon>
-                <icon>🖃</icon>
+                <icon>🖃</icon> -->
             </div>
         </nav>
         <menu>
@@ -176,7 +181,7 @@
                         newcomers.</div>
                 </div>
                 <svg class="values-menu" width="50%"  viewBox="-2 -2 202 203" shape-rendering="geometricPrecision">
-                    <a onmouseover="onMouseOverItem('Collaboration')" onmouseleave="onMouseLeavingItem('Collaboration')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Collaboration')" onmouseleave="onMouseLeavingItem('Collaboration')"  >
                         <clipPath id="theClippingPath1">
                             <path class="frag" d="M100,100 v-100 a100,100 1 0,1 86.6025,50"" />
                         </clipPath>
@@ -184,7 +189,7 @@
                             clip-path="url(#theClippingPath1)"></image>
                         <text x="135" y="42.5" text-anchor="middle">Collaboration</text>
                     </a>
-                    <a onmouseover="onMouseOverItem('Accesibility')" onmouseleave="onMouseLeavingItem('Accesibility')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Accesibility')" onmouseleave="onMouseLeavingItem('Accesibility')"  >
                         <clipPath id="theClippingPath2">
                             <path class="frag" d="M100,100 l86.6025,-50 a100,100 1 0,1 0,100" />
                         </clipPath>
@@ -192,7 +197,7 @@
                             clip-path="url(#theClippingPath2)"></image>
                         <text x="170" y="105" text-anchor="middle">Accesibility</text>
                     </a>
-                    <a onmouseover="onMouseOverItem('Empowerment')" onmouseleave="onMouseLeavingItem('Empowerment')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Empowerment')" onmouseleave="onMouseLeavingItem('Empowerment')"  >
                         <clipPath id="theClippingPath3">
                             <path class="frag" d="M100,100 l86.6025,50 a100,100 1 0,1 -86.6025,50" />
                         </clipPath>
@@ -200,7 +205,7 @@
                             clip-path="url(#theClippingPath3)"></image>
                         <text x="140" y="160" text-anchor="middle">Empowerment</text>
                     </a>
-                    <a onmouseover="onMouseOverItem('Privacy')" onmouseleave="onMouseLeavingItem('Privacy')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Privacy')" onmouseleave="onMouseLeavingItem('Privacy')"  >
                         <clipPath id="theClippingPath4">
                             <path class="frag" d="M100,100 v100 a100,100 1 0,1 -86.6025,-50" />
                         </clipPath>
@@ -211,7 +216,7 @@
                             <tspan x="65" y="170">Security</tspan>
                         </text>
                     </a>
-                    <a onmouseover="onMouseOverItem('Inclusivity')" onmouseleave="onMouseLeavingItem('Inclusivity')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Inclusivity')" onmouseleave="onMouseLeavingItem('Inclusivity')"  >
                         <clipPath id="theClippingPath5">
                             <path class="frag" d="M100,100 l-86.6025,50 a100,100 1 0,1 0,-100" />
                         </clipPath>
@@ -220,7 +225,7 @@
                         <text x="27.5" y="105" text-anchor="middle">Inclusivity</text>
                         
                     </a>
-                    <a onmouseover="onMouseOverItem('Improvement')" onmouseleave="onMouseLeavingItem('Improvement')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Improvement')" onmouseleave="onMouseLeavingItem('Improvement')"  >
                         <clipPath id="theClippingPath6">
                             <path class="frag" d="M100,100 l-86.6025,-50 a100,100 1 0,1 86.0025,-50" />
                         </clipPath>
@@ -290,12 +295,16 @@
         <footer>
             <div class="footer-info">
                 <div class="footer-brand">
-                    <img src="images/logo.png"/>
+                    <div class="footer-header">
+                        <img src="images/logo.png"/>
+                    </div>
                     <p>We provide a one-stop platform for newcomers in Canada to access to essential resources, information, and the support
-                    they need.</p>
+                        they need.</p>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contact Us:</h4>
+                    <div class="footer-header">
+                        <h4>Contact Us:</h4>
+                    </div>
                     <ul>
                         <li>vesoftt@gmail.com</li>
                         <li>Send us a message</li>
@@ -304,7 +313,9 @@
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h4>Follow us on</h4>
+                    <div class="footer-header">
+                        <h4>Follow us on</h4>
+                    </div>
                     <div>Social brands</div>
                 </div>
             </div>

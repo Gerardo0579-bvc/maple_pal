@@ -6,39 +6,61 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="search-form">
-        <input type="text" id="keyword-input" placeholder="Introduce palabras clave">
-        <button id="search-button">Buscar</button>
-    </div>
-    <div id="results-area">
-        <div id="filters-section">
-            <select id="sort-order">
-                <option value="">Ordenar por</option>
-                <option value="date-asc">Fecha (Ascendente)</option>
-                <option value="date-desc">Fecha (Descendente)</option>
-                <option value="alphabetical">Alfabético</option>
-            </select>
-            <select id="work-scheme">
-                <option value="">Esquema de trabajo</option>
-                <option value="remote">Remoto</option>
-                <option value="hybrid">Híbrido</option>
-                <option value="on-site">Presencial</option>
-                <option value="unknown">Desconocido</option>
-            </select>
-            <select id="job-type">
-                <option value="">Tipo de trabajo</option>
-                <option value="part-time">Parcial</option>
-                <option value="full-time">Tiempo completo</option>
-                <option value="internship">Prácticas</option>
-                <option value="unknown">Desconocido</option>
-            </select>
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+            <a href="jobs.html">
+                <button class="button-nav" title="search">Jobs</button>
+            </a>
+            <!-- <div class="search">
+                        <input type="text" placeholder="Search...">
+                        <button class="button-search" title="search">🔎︎</button>
+                    </div> -->
         </div>
-        <div id="results-list" style="width: 66%;">
-            Start a new search
+        <div class="nav-item nav-right">
+            <!-- <a href="#" >Sign up</a>
+                    <a href="#" >Log in</a>
+                    <icon>👤</icon>
+                    <icon>🖃</icon> -->
+        </div>
+    </nav>
+
+    <div id="form-wrapper">
+        <div id="search-form">
+            <input type="text" id="keyword-input" placeholder="Introduce palabras clave">
+            <button id="search-button">Buscar</button>
+        </div>
+        <div id="results-area">
+            <div id="filters-section">
+                <select id="sort-order">
+                    <option value="">Ordenar por</option>
+                    <option value="date-asc">Fecha (Ascendente)</option>
+                    <option value="date-desc">Fecha (Descendente)</option>
+                    <option value="alphabetical">Alfabético</option>
+                </select>
+                <select id="work-scheme">
+                    <option value="">Esquema de trabajo</option>
+                    <option value="remote">Remoto</option>
+                    <option value="hybrid">Híbrido</option>
+                    <option value="on-site">Presencial</option>
+                    <option value="unknown">Desconocido</option>
+                </select>
+                <select id="job-type">
+                    <option value="">Tipo de trabajo</option>
+                    <option value="part-time">Parcial</option>
+                    <option value="full-time">Tiempo completo</option>
+                    <option value="internship">Prácticas</option>
+                    <option value="unknown">Desconocido</option>
+                </select>
+            </div>
+            <div id="results-list" style="width: 66%;">
+                Start a new search
+            </div>
         </div>
     </div>
-
-
+    
     <script src="js/jobs-search.js"></script>
 
 </body>

@@ -32,9 +32,9 @@ function renderJobs() {
             modalityElement.textContent = job.modality;
             info.appendChild(modalityElement);
 
-            var schemeElement = document.createElement('div');
-            schemeElement.textContent = job.scheme;
-            info.appendChild(schemeElement);
+            var locationElement = document.createElement('div');
+            locationElement.textContent = job.location;
+            info.appendChild(locationElement);
 
             resultsList.appendChild(jobElement);
         });
@@ -67,7 +67,7 @@ document.getElementById('search-button').addEventListener('click', function() {
         .then(function(response) {
             console.log(response)
             if (!response.ok) {
-                throw new Error('Error al realizar la búsqueda');
+                // throw new Error('Error al realizar la búsqueda');
             }
             return response.json();
         })
@@ -80,6 +80,12 @@ document.getElementById('search-button').addEventListener('click', function() {
             alert('Error al realizar la búsqueda');
         })
         .finally(function() {
+            allJobs = [
+                    {title: 'Desarrollador Full Stack', description: 'new description', location: 'remote', modality: 'Partial', date: '2014    ', id: 1},
+                    {title: 'Analista de Datos', description: 'new description', location: 'remote', modality: 'Partial', date: '2014', id: 2},
+                    {title: 'Ingeniero de Software', description: 'new description', location: 'remote', modality: 'Partial', date: '2014', id: 3}
+                    ];
+            renderJobs();
             isSearchInProgress = false;
         });
 });

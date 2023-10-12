@@ -5,6 +5,8 @@
     height: 550px;
     position: relative;
     overflow: hidden;
+    top: calc(4em + 50px);
+    margin-bottom: calc(4em + 50px);
 }
 
 .slide {
