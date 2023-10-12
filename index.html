@@ -22,16 +22,6 @@
                 <icon>🖃</icon>
             </div>
         </nav>
-        <div class="sticky-buttons">
-            <div class="sticky-button">
-                <icon>🖃</icon>
-                <p>Contact us</p>
-            </div>
-            <div class="sticky-button">
-                <icon>⌂</icon>
-                <p>Home</p>
-            </div>
-        </div>
         <menu>
             <ul class="navbar">
                 <li><a  href="#our-services">Our services</a></li>
@@ -61,60 +51,74 @@
         <section class="section-wrapper">
             <div id="our-services">
                 <h2>Our services</h2>
-
-                <div id="new-service">
-                    <div class="new-service-body">
-                        <div class="new-service-text">
-                            Find A Job
-                        </div>
-                        <div class="new-service-img">
-                            <span class="service-arrow">▲</span>
-                            <span class="service-arrow">▲</span>
-                        </div>
-                    </div>
-                </div>
-
                 <div id="services-wrapper">
-                    <div class="service-card">
-                        <div class="service-card-body">
-                            <div class="service-card-content">
-                                <h3>Arrive</h3>
-                                <ul>
-                                    <li>Open bank account</li>
-                                    <li>Apply SIN number</li>
-                                    <li>Apply MSP</li>
-                                    <li>Find a place to live</li>
-                                </ul>
+                    <div id="services-items">
+                        <a onmouseenter="onMouseOverService('jobs')"   class="stylished-btn stylished-special">
+                            <div class="stylished-btn-body stylished-btn-special">
+                                Find A job
                             </div>
-                        </div>
+                        </a>
+                        <a onmouseenter="onMouseOverService('arrive')"   class="stylished-btn stylished-special">
+                            <div class="stylished-btn-body stylished-btn-special">
+                                Arrive
+                            </div>
+                        </a>
+                        <a onmouseenter="onMouseOverService('stabilize')"  class="stylished-btn stylished-special">
+                            <div class="stylished-btn-body stylished-btn-special">
+                                Stabilize
+                            </div>
+                        </a>
+                        <a onmouseenter="onMouseOverService('thrive')"  class="stylished-btn stylished-special">
+                            <div class="stylished-btn-body stylished-btn-special">
+                                Thrive
+                            </div>
+                        </a>
+                        
                     </div>
-                    <div class="service-card">
-                        <div class="service-card-body">
-                            <div class="service-card-content">
-                                <h3>Stabilize</h3>
-                                <ul>
-                                    <li>Find a job</li>
-                                    <li>Welfare Canada</li>
-                                    <li>Communities</li>
-                                    <li>Elders services</li>
-                                </ul>
-                            </div>
+                    <div id="services-content">
+                        <div id="item-jobs" class="service-description item-visible">
+                            <h3>Find a job</h3>
+                            <ul>
+                                <li>Centralized job search</li>
+                                <li>Get useful insights</li>
+                                <li>Apply to multiple position easily</li>
+                            </ul>
+                            <a href="jobs.html" class="stylished-btn">
+                                <div class="stylished-btn-body">
+                                    Search jobs
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-card-body">
-                            <div class="service-card-content">
-                                <h3>Thrive</h3>
-                                <ul>
-                                    <li>Education</li>
-                                    <li>Career path</li>
-                                    <li>Retirement plan</li>
-                                    <li>Local services</li>
-                                </ul>
-                            </div>
+                        <div id="item-arrive" class="service-description ">
+                            <h3>Arrive</h3>
+                            <ul>
+                                <li>Open bank account</li>
+                                <li>Apply SIN number</li>
+                                <li>Apply MSP</li>
+                                <li>Find a place to live</li>
+                            </ul>
+                        </div>
+                        <div id="item-stabilize" class="service-description ">
+                            <h3>Stabilize</h3>
+                            <ul>
+                                <li>Find a job</li>
+                                <li>Welfare Canada</li>
+                                <li>Communities</li>
+                                <li>Elders services</li>
+                            </ul>
+                        </div>
+                        <div id="item-thrive" class="service-description ">
+                            <h3>Thrive</h3>
+                            <ul>
+                                <li>Education</li>
+                                <li>Career path</li>
+                                <li>Retirement plan</li>
+                                <li>Local services</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
         <section class="section-wrapper" id="about-us">
@@ -127,7 +131,11 @@
                         are anticipated to immigrate to Canada via diverse pathways.</p>
                         <p>A one stop shop that provides array of opportunities and essential services necessary to help newcomers in their landing
                         and settlement journey making them feel supported, connected, and empowered as they navigate their lives in Canada.</p>
-                        <button>Learn more about our team</button>
+                        <a href="#" class="stylished-btn">
+                            <div class="stylished-btn-body">
+                                Learn more about our team
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -142,7 +150,11 @@
                         serves as a one-stop shop for accessing essential resources, information, and support during their settlement journey.
                         We are committed to empowering newcomers, fostering a sense of belonging, and facilitating seamless integration into
                         Canadian society.</p>
-                        <button>Learn more about our team</button>
+                        <a href="#" class="stylished-btn">
+                            <div class="stylished-btn-body">
+                                Learn more about our team
+                            </div>
+                        </a>
                     </div>
                     <img class="img-left" src="images/logo.png" alt="about us image">
                 </div>
@@ -151,20 +163,20 @@
         <section class="section-wrapper" id="our-values">
             <div class="values-wrapper">
                 <div class="values-description values-left">
-                    <div id="value-Improvement" class="value-item value-item-collapsed">
+                    <div id="item-Improvement" class="value-item">
                         The safety and privacy of our users are of utmost importance. We commit to implementing robust security measures to
                         protect personal data and ensure a safe online environment for all users.</div>
-                    <div id="value-Inclusivity" class="value-item value-item-collapsed">
+                    <div id="item-Inclusivity" class="value-item">
                         We embrace the diversity of all newcomers, acknowledging that each immigrant brings unique experiences and backgrounds.
                     Our platform is designed to be accessible and cater to the needs of individuals from various cultural, linguistic, and
                     ethnic backgrounds.</div>
-                    <div id="value-Privacy" class="value-item value-item-collapsed">
+                    <div id="item-Privacy" class="value-item">
                         We understand that supporting new immigrants is a collective effort. Our app will collaborate with government agencies,
                         NGOs, educational institutions, and other relevant organizations to ensure a comprehensive and reliable resource hub for
                         newcomers.</div>
                 </div>
                 <svg class="values-menu" width="50%"  viewBox="-2 -2 202 203" shape-rendering="geometricPrecision">
-                    <a onmouseover="onMouseOverValue('Collaboration')" onmouseleave="onMouseLeavingValue('Collaboration')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Collaboration')" onmouseleave="onMouseLeavingItem('Collaboration')"  xlink:href="#">
                         <clipPath id="theClippingPath1">
                             <path class="frag" d="M100,100 v-100 a100,100 1 0,1 86.6025,50"" />
                         </clipPath>
@@ -172,7 +184,7 @@
                             clip-path="url(#theClippingPath1)"></image>
                         <text x="135" y="42.5" text-anchor="middle">Collaboration</text>
                     </a>
-                    <a onmouseover="onMouseOverValue('Accesibility')" onmouseleave="onMouseLeavingValue('Accesibility')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Accesibility')" onmouseleave="onMouseLeavingItem('Accesibility')"  xlink:href="#">
                         <clipPath id="theClippingPath2">
                             <path class="frag" d="M100,100 l86.6025,-50 a100,100 1 0,1 0,100" />
                         </clipPath>
@@ -180,7 +192,7 @@
                             clip-path="url(#theClippingPath2)"></image>
                         <text x="170" y="105" text-anchor="middle">Accesibility</text>
                     </a>
-                    <a onmouseover="onMouseOverValue('Empowerment')" onmouseleave="onMouseLeavingValue('Empowerment')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Empowerment')" onmouseleave="onMouseLeavingItem('Empowerment')"  xlink:href="#">
                         <clipPath id="theClippingPath3">
                             <path class="frag" d="M100,100 l86.6025,50 a100,100 1 0,1 -86.6025,50" />
                         </clipPath>
@@ -188,7 +200,7 @@
                             clip-path="url(#theClippingPath3)"></image>
                         <text x="140" y="160" text-anchor="middle">Empowerment</text>
                     </a>
-                    <a onmouseover="onMouseOverValue('Privacy')" onmouseleave="onMouseLeavingValue('Privacy')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Privacy')" onmouseleave="onMouseLeavingItem('Privacy')"  xlink:href="#">
                         <clipPath id="theClippingPath4">
                             <path class="frag" d="M100,100 v100 a100,100 1 0,1 -86.6025,-50" />
                         </clipPath>
@@ -199,7 +211,7 @@
                             <tspan x="65" y="170">Security</tspan>
                         </text>
                     </a>
-                    <a onmouseover="onMouseOverValue('Inclusivity')" onmouseleave="onMouseLeavingValue('Inclusivity')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Inclusivity')" onmouseleave="onMouseLeavingItem('Inclusivity')"  xlink:href="#">
                         <clipPath id="theClippingPath5">
                             <path class="frag" d="M100,100 l-86.6025,50 a100,100 1 0,1 0,-100" />
                         </clipPath>
@@ -208,7 +220,7 @@
                         <text x="27.5" y="105" text-anchor="middle">Inclusivity</text>
                         
                     </a>
-                    <a onmouseover="onMouseOverValue('Improvement')" onmouseleave="onMouseLeavingValue('Improvement')"  xlink:href="#">
+                    <a onmouseover="onMouseOverItem('Improvement')" onmouseleave="onMouseLeavingItem('Improvement')"  xlink:href="#">
                         <clipPath id="theClippingPath6">
                             <path class="frag" d="M100,100 l-86.6025,-50 a100,100 1 0,1 86.0025,-50" />
                         </clipPath>
@@ -227,15 +239,15 @@
                     </svg>
                 </svg>
                 <div class="values-description values-right">
-                    <div id="value-Collaboration" class="value-item value-item-collapsed">
+                    <div id="item-Collaboration" class="value-item">
                         We understand that supporting new immigrants is a collective effort. Our app will collaborate with government agencies,
                         NGOs, educational institutions, and other relevant organizations to ensure a comprehensive and reliable resource hub for
                         newcomers.</div>
-                    <div id="value-Accesibility" class="value-item value-item-collapsed">
+                    <div id="item-Accesibility" class="value-item">
                         We believe that access to vital information and resources is fundamental to successful settlement. Our app will offer
                         user-friendly navigation, multilingual support, and innovative features that enable easy access to information
                         regardless of technological proficiency.</div>
-                    <div id="value-Empowerment" class="value-item value-item-collapsed">
+                    <div id="item-Empowerment" class="value-item">
                         We are dedicated to empowering newcomers to take charge of their settlement process. By providing them with accurate and
                         up-to-date information, resources, and tools, we aim to foster self-sufficiency and confidence in navigating their new
                         life in Canada.</div>
@@ -268,7 +280,11 @@
                     <li>Benefit 4 - Access to comuninity support</li>
                     <li>Benefit 5 - Access to lot of jobs opportunities</li>
                 </ul>
-                <button>Go sign up >>> </button>
+                <a href="#" class="stylished-btn">
+                    <div class="stylished-btn-body">
+                        Go sign up >>> 
+                    </div>
+                </a>
             </div>
         </section>
         <footer>
@@ -299,18 +315,25 @@
 
         <script src="js/slider.js"></script>
         <script>
-            function onMouseOverValue(item){
-                var element = document.getElementById(`value-${item}`);
+            function onMouseOverService(item){
+                var items = document.querySelectorAll('.item-visible');
+
+                items.forEach(function (item) {
+                    item.classList.remove('item-visible');
+                });
+
+                onMouseOverItem(item);
+            }
+            function onMouseOverItem(item){
+                var element = document.getElementById(`item-${item}`);
                 if (element) {
-                    element.classList.add("value-item-visible");
-                    element.classList.remove("value-item-collapsed");
+                    element.classList.add("item-visible");
                 }
             }
-            function onMouseLeavingValue(item){
-                var element = document.getElementById(`value-${item}`);
+            function onMouseLeavingItem(item){
+                var element = document.getElementById(`item-${item}`);
                 if (element) {
-                    element.classList.add("value-item-collapsed");
-                    element.classList.remove("value-item-visible");
+                    element.classList.remove("item-visible");
                 }
             }
         </script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maple palJobs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="search-form">
+        <input type="text" id="keyword-input" placeholder="Introduce palabras clave">
+        <button id="search-button">Buscar</button>
+    </div>
+    <div id="results-area">
+        <div id="filters-section">
+            <select id="sort-order">
+                <option value="">Ordenar por</option>
+                <option value="date-asc">Fecha (Ascendente)</option>
+                <option value="date-desc">Fecha (Descendente)</option>
+                <option value="alphabetical">Alfabético</option>
+            </select>
+            <select id="work-scheme">
+                <option value="">Esquema de trabajo</option>
+                <option value="remote">Remoto</option>
+                <option value="hybrid">Híbrido</option>
+                <option value="on-site">Presencial</option>
+                <option value="unknown">Desconocido</option>
+            </select>
+            <select id="job-type">
+                <option value="">Tipo de trabajo</option>
+                <option value="part-time">Parcial</option>
+                <option value="full-time">Tiempo completo</option>
+                <option value="internship">Prácticas</option>
+                <option value="unknown">Desconocido</option>
+            </select>
+        </div>
+        <div id="results-list" style="width: 66%;">
+            Start a new search
+        </div>
+    </div>
+
+
+    <script src="js/jobs-search.js"></script>
+
+</body>
+</html>

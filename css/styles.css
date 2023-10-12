@@ -22,7 +22,6 @@ body{
     width: 80%;
     margin: 0 auto;
     display: block;
-    top: calc(4em + 50px);
 }
 
 
@@ -134,38 +133,6 @@ menu{
     color: white;
 }
 
-.sticky-buttons{
-    z-index: 99999;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    right: 10%;
-    bottom: 10em;
-}
-.sticky-button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F49136;
-    color: #000;
-    border-radius: 20px 0 0 20px;
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-}
-.sticky-button:hover{
-    background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
-}
-.sticky-button icon{
-   font-size: 3em;
-   font-weight: 700;
-}
-.sticky-button p{
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 700;
-}
 
 
 
@@ -184,125 +151,43 @@ menu{
     display: flex;
     flex-direction: column;
 }
-#new-service{
-    align-self: center;
-    display: inline-block;
-    border-radius: 40px;
-    background: transparent;
-    display: flex;
-    transition: background-color 0.2s linear;
-}
-#new-service:hover{
-    background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
-}
-#new-service .new-service-body{
-    width: 460px;
-    height: 130px;
-    margin: 0.5em;
-    background-color: aliceblue;
-    overflow: hidden;
-    display: Flex;
-    border-radius: 35px;
-}
-#new-service .new-service-text{
-    width: 25%;
-    line-height: 1em;
-    text-align: left;
-    padding-left: 0.6em;
-    color: #303030;
-    display: inline-flex;
-    align-items: center;
-    font-size: 38px;
-    text-shadow: -2px 2px white, 2px 2px white, 2px -2px white, -2px -2px white;
-    font-weight: 800;
-    background: linear-gradient(145deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
-    transition: background 0.3s linear;
-}
-#new-service:hover .new-service-text{
-    background: #303030;
-}
-#new-service .new-service-img{
-    width: 75%;
-    height: auto;
-    display: inline-flex;
-    background-image: url("../images/logo.png");
-    background-size: cover;
-}
-#new-service:hover .new-service-img{
-    color: #303030;
-}
-#new-service .service-arrow{
-    height: 50%;
-    font-size: 5em;
-    rotate: 90deg;
-    color: black;
-}
 
 
 #services-wrapper {
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-}
-.service-card{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left:2.5%;
-    margin-right:2.5%;
-    border-radius: 40px;
-    width: 95%;
-    background-color: transparent;
-}
-.service-card:hover{
-    background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
-}
-
-.service-card-body{
-    margin: 0.5em;
-    border-radius: 35px;
-    height: 25em;
-    background-color: #E3E3E3;
-    overflow: hidden;
     display: grid;
-    background-image: url("../images/logo.png");
-    background-size: cover;
-    background-color: rgb(0, 0, 0, 75%);
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
-.service-card:hover > .service-card-body {
-    opacity: .8;
+#services-wrapper #services-items{
+    margin: 1em 0 2em 0;
 }
-.service-card-content{
-    align-self: center;
-    background-color: transparent;
-    transition: background-color 0.5s linear;
+#services-wrapper #services-content{
+    border-left: 3px solid blueviolet;
+    position: relative;
 }
-.service-card:hover .service-card-content{
-    background-color: #F2F2F2;
+#services-content .service-description{
+    font-size: 20px;
+    margin-left: 3em;
+    position: absolute;
+    width: 100%;
+    visibility: collapse;
 }
-.service-card-content h3 {
-    color: black;
+#services-content .service-description h3{
     text-align: center;
-    font-size: 40px;
-    text-shadow: -2px 2px white, 2px 2px white, 2px -2px white, -2px -2px white;
-    margin: 0.5em 0;
+    font-size: 2em;
 }
-.service-card:hover .service-card-content h3 {
-    text-shadow: none;
+#services-content .service-description ul{
+    list-style: none;
+    line-height: 2em;
+}
+#services-content .service-description ul li::before {
+    content: '✔';
+    color: blue;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1em;
 }
 
-.service-card-content ul{
-    color: black;
-    font-size: 20px;
-    margin: 0 4em 2em 4em;
-    display: none;
-}
-.service-card:hover ul {
-    display: block;
-}
-.service-card-content ul li{
-    margin: 8px 0 8px 0 ;
-}
 
 
 #about-us, #our-values {
@@ -326,18 +211,60 @@ menu{
     text-align: justify;
 }
 
-.section-content .section-info button, .subscription-info button{
-    width: 100%;
+.stylished-btn{
+    display: block;
+    width: calc(100% - 8px);
     height: 60px;
     font-size: 20px;
     text-align: center;
     border-radius: 12px;
     border: none;
     color: white;
-    margin-top: 3em;
-    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    margin-top: 2em;
+    box-shadow: 0 4px 4px rgba(0,0,0,.1);
     background: linear-gradient(90deg, rgba(229, 68, 58, 1) 0%, rgba(110, 45, 191, 1) 100%);
     cursor: pointer;
+    overflow: hidden;
+    padding: 4px;
+    text-decoration: none;
+}
+.stylished-special{
+    margin-top: 1em;
+    border-radius: 0px;
+    padding: 0 0 4px 0 ;
+    cursor:auto;
+}
+.stylished-btn .stylished-btn-body{
+    height: 100%;
+    background: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color, color, text-shadow 0.1s linear;
+    border-radius: 10px;
+    box-shadow: none;
+    color: black;
+}
+.stylished-btn-special{
+    letter-spacing: 2px;
+    color: black;
+    font-weight: 800;
+    font-size: 1.8em;
+    text-shadow: -2px 2px white, 2px 2px white, 2px -2px white, -2px -2px white;
+    border-radius: 0 !important;
+    background-color: #333 !important;
+}
+.stylished-btn:hover > .stylished-btn-body{
+    transition: background-color, color 0.1s linear;
+    color: white;
+    background: rgba(0.3, 0.3, 0.3, 0.3);
+}
+.stylished-btn:hover > .stylished-btn-special{
+    transition: background-color, color, text-shadow 0.1s linear;
+    text-shadow: none;
+    color: white;
+    background: rgba(50, 50, 50, 0.7) !important;
 }
 
 .values-wrapper{
@@ -359,6 +286,7 @@ menu{
     line-height: 23px;
     text-align: left;
     margin-top: 1em;
+    visibility: collapse;
 }
 
 .values-menu{
@@ -370,12 +298,8 @@ menu{
 }
 
 
-.value-item-visible {
-    visibility: visible;
-}
-
-.value-item-collapsed {
-    visibility: collapse;
+.item-visible {
+    visibility: visible !important;
 }
 
 .frag {
@@ -434,4 +358,97 @@ footer .copyright{
     background: #222;
     color: white;
     padding: 1px 0;
+}
+
+
+
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 2em 0;
+    padding: 1em;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+#keyword-input {
+    flex-grow: 1;
+    margin-right: 1em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+}
+
+#search-button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #3f51b5;
+    color: white;
+}
+#results-area{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+#filters-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    padding: 1em;
+    width: 100%;
+    margin: auto;
+}
+
+#filters-section select {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #cdcdcd;
+}
+#results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.result-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    padding: 1em;
+}
+
+.result-card h2 {
+    margin: 0;
+    margin-bottom: 1em;
+    color: #212121;
+}
+
+.result-card p {
+    color: #757575;
+}
+
+.result-card div {
+    color: #212121;
+}
+.result-card .job-extras{
+    display: flex;
+    column-gap: 2em;
 }
